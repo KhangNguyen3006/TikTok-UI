@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark, faMagnifyingGlass, faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 import { Wrapper as PopperWrapper } from "~/commponents/Popper";
+import AccountItem from "~/commponents/AccountItem";
 
 const cx = classNames.bind(styles)
 
@@ -20,7 +21,7 @@ function Header() {
   const [searchResult, setSearchResult] = useState([])
   useEffect(() => {
     setTimeout(() => {
-      setSearchResult([1, 2, 3])
+      setSearchResult([])
     }, 3000);
   }, []);
 
@@ -38,7 +39,12 @@ function Header() {
           render={attrs => (
             <div className={cx("search-result")}>
               <PopperWrapper>
-                Ket qua
+                <h4 className={cx('search-title')}>Account</h4>
+                <AccountItem />
+                <AccountItem />
+                <AccountItem />
+                <AccountItem />
+                <AccountItem />
               </PopperWrapper>
             </div>
           )}
