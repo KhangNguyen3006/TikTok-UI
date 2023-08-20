@@ -9,6 +9,7 @@ import images from '~/assets/images'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark, faMagnifyingGlass, faSpinner } from "@fortawesome/free-solid-svg-icons";
 
+import Button from '~/commponents/Button'
 import { Wrapper as PopperWrapper } from "~/commponents/Popper";
 import AccountItem from "~/commponents/AccountItem";
 
@@ -66,7 +67,8 @@ function Header() {
         </Tippy>
 
         <div className={cx('actions')}>
-
+          <Button primary >Log in</Button>
+          <Button outline >Folow</Button>
         </div>
       </div>
     </header>
