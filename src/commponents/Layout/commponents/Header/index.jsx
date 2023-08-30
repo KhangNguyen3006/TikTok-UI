@@ -67,8 +67,11 @@ function Header() {
         </Tippy>
 
         <div className={cx('actions')}>
-          <Button primary >Log in</Button>
-          <Button outline >Folow</Button>
+          <Button text>Upload</Button>
+          <Button primary>Log in</Button>
+          <Button rounded>Get app</Button>
+          {/* <Button outline small>Folow</Button> */}
+          {/* <Button outline large>Log in</Button> */}
         </div>
       </div>
     </header>
@@ -76,3 +79,4 @@ function Header() {
 }
 
 export default Header;
+
